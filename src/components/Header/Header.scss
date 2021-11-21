@@ -1,0 +1,40 @@
+@import "../variables";
+
+.Header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  font-size: 20px;
+  .nav-link {
+    margin: 0 30px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3.4px;
+    transition: 0.5s;
+  }
+  .nav-link:hover {
+    color: $myOrange;
+  }
+}
+
+@media (max-width: 560px) {
+  .Header {
+    font-size: 18px;
+    .nav-link {
+      margin: 0 15px;
+    }
+  }
+}
+@media (max-width: 405px) {
+  .Header {
+    height: 120px;
+    font-size: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    .nav-link {
+      margin: 4px 15px;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.scss"
 
-export const Home = (props) => {
+export const Home = () => {
 
     return (
         <div className={"Home"}>
